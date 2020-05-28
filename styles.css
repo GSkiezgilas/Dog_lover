@@ -1,0 +1,112 @@
+/*******************/
+/* Reseting values */
+/*******************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/**************/
+/* Main style */
+/**************/
+
+main {
+	height: 83vh;
+}
+
+h1 {
+	margin: 30px 0;
+	text-align: center;
+	color: #5d351f;
+}
+
+.main-container {
+	display: flex;
+	padding: 0 10%;
+	height: 100%;
+}
+
+.btn-dog-container {
+	text-align: center;
+	min-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+button {
+	position: relative;
+	background: #5d351f;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	height: 30px;
+	padding: 0 10px;
+}
+
+button:hover,
+a:hover {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+button::before,
+button::after {
+	content: " ";
+	position: absolute;
+	background: #5d351f;
+	border-radius: 40%;
+	z-index: -2;
+	top: 2px;
+	right: -5px;
+	bottom: 2px;
+	left: -5px;
+}
+
+button::before{
+	transform: rotate(11deg);
+}
+
+button::after {
+	transform: rotate(-11deg);
+}
+
+.fact-container {
+	width: 100%;
+	text-align: center;
+}
+
+.fact {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 22px;
+	color: #5d351f;
+}
+
+.display-none {
+	display: none;
+}
+
+footer {
+	background: #5d351f;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 7vh;
+}
+
+footer p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
